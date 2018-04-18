@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="664" />
     <option name="y" value="360" />
+=======
+    <option name="x" value="1012" />
+    <option name="y" value="243" />
+>>>>>>> 63318eb15e519f78c2ad501cb1f714a19ef368a6
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
