@@ -22,8 +22,18 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="488" />
     <option name="y" value="149" />
+=======
+<<<<<<< HEAD
+    <option name="x" value="664" />
+    <option name="y" value="360" />
+=======
+    <option name="x" value="1012" />
+    <option name="y" value="243" />
+>>>>>>> 63318eb15e519f78c2ad501cb1f714a19ef368a6
+>>>>>>> 5e9793103354e5f97745d4eed955a93d22946799
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
