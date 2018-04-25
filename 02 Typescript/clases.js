@@ -51,3 +51,10 @@ var UsuarioDos = /** @class */ (function () {
 var adrianDos = new UsuarioDos('Adrian', false, 28);
 console.log(adrianDos.casado);
 console.log(adrianDos.imprimirUsuario('Hola soy Goku'));
+var carla = {
+    nombre: 'ADrian',
+    edad: 28,
+    imprimir: function (saludo) {
+        return '';
+    }
+};

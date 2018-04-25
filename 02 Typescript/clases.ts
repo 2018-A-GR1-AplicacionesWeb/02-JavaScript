@@ -59,6 +59,22 @@ let adrianDos = new UsuarioDos('Adrian', false, 28);
 console.log(adrianDos.casado);
 console.log(adrianDos.imprimirUsuario('Hola soy Goku'));
 
+let carla: UsuarioTres = {
+    nombre: 'ADrian',
+    edad: 28,
+    imprimir: function (saludo?: string) {
+        return '';
+    }
+};
+
+interface UsuarioTres {
+    nombre: string;
+    casado?: boolean;
+    edad: number;
+
+    imprimir(saludo?: string): string;
+}
+
 
 
 
