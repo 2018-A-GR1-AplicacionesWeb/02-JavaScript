@@ -92,7 +92,25 @@ let nuevoArregloDeUsuarios = arregloUsuarios
             usuario.deuda = calcularDeuda(usuario.edad);
             return usuario;
         }
-    );
+    )
+    .filter(
+        (usuario: UsuarioArreglo) => {
+            return usuario.deuda < 50 // true, false
+        }
+    )
+
+/*
+.find(
+    ()=>{
+
+    }
+)
+.some( // every AND some OR = boolean
+    (usuario:UsuarioArreglo)=>{
+        return usuario.edad < 18 // true, false
+    }
+);
+*/
 
 console.log('nuevoArregloDeUsuarios', nuevoArregloDeUsuarios);
 

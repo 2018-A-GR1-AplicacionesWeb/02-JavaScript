@@ -60,7 +60,22 @@ function (usuario) {
     .map(function (usuario) {
     usuario.deuda = calcularDeuda(usuario.edad);
     return usuario;
+})
+    .filter(function (usuario) {
+    return usuario.deuda < 50; // true, false
 });
+/*
+.find(
+    ()=>{
+
+    }
+)
+.some( // every AND some OR = boolean
+    (usuario:UsuarioArreglo)=>{
+        return usuario.edad < 18 // true, false
+    }
+);
+*/
 console.log('nuevoArregloDeUsuarios', nuevoArregloDeUsuarios);
 function calcularDeuda(edadUsuario) {
     var totalEdad = arregloUsuarios.reduce(function (total, usuario) { return total + usuario.edad; }, 0);
