@@ -50,13 +50,19 @@ var resultadoSumaConReduce = arregloNumeros
 }, 20);
 console.log(resultadoSumaConReduce);
 var resultadoEdadDeUsuarios = arregloUsuarios
-    .reduce(function (acumuladoEdad, usuario) {
-    return acumuladoEdad + usuario.edad;
-}, 0);
+    .reduce(function (acumuladoEdad, usuario) { return acumuladoEdad + usuario.edad; }, 0);
 var nuevoArregloDeUsuarios = arregloUsuarios
     .map(// el arreglo transformado o mutado
 function (usuario) {
-    usuario.deuda = 0;
+    usuario.becado = false;
+    return usuario;
+})
+    .map(function (usuario) {
+    usuario.deuda = calcularDeuda(usuario.edad);
     return usuario;
 });
 console.log('nuevoArregloDeUsuarios', nuevoArregloDeUsuarios);
+function calcularDeuda(edadUsuario) {
+    var totalEdad = arregloUsuarios.reduce(function (total, usuario) { return total + usuario.edad; }, 0);
+    return totalEdad * (edadUsuario / 100);
+}
